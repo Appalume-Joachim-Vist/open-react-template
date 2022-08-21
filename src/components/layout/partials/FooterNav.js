@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+import Mailto from '../../../utils/Mailto';
+
 
 const FooterNav = ({
   className,
@@ -19,11 +21,11 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="#0">Kontakt</Link>
+          <Mailto email="info@appalume.se" subject="Generella frågor" body="Hej,">Kontakt</Mailto>
         </li>
-        <li>
+        {/* <li>
           <Link to="#0">Om oss</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
