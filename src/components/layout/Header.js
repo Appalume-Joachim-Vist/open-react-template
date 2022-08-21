@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import Mailto from '../../utils/Mailto';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -93,7 +94,7 @@ const Header = ({
                 className="header-nav-toggle"
                 onClick={isActive ? closeMenu : openMenu}
               >
-                <span className="screen-reader">Menu</span>
+                <span className="screen-reader">Meny</span>
                 <span className="hamburger">
                   <span className="hamburger-inner"></span>
                 </span>
@@ -117,8 +118,8 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Kontakta oss</Link>
-                      </li>
+                        <Mailto className="button button-primary button-wide-mobile button-sm" email="info@appalume.se " subject="Generella frågor" body="Hej," onClick={closeMenu}>Kontakta oss</Mailto>
+                        </li>
                     </ul>}
                 </div>
               </nav>

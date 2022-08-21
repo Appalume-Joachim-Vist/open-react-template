@@ -73,7 +73,7 @@ const Hero = ({
 
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/artificial-intelligence-AI.png')}
+                src={require('./../../assets/images/csm_Serverroom_with_servers_on_the_left_and_right_side_fbba06e05b.jpg')}
                 alt="Hero"
                 width={896}
                 height={504} />
