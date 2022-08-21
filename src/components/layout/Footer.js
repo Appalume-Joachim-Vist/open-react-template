@@ -40,12 +40,12 @@ const Footer = ({
             topDivider && 'has-top-divider'
           )}>
           <div className="footer-top space-between text-xxs">
-            <Logo />
+            <Logo className='Footer-Logo'/>
             <FooterSocial />
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>
+            <div className="footer-copyright">Logodesign gjord av <a href='https://www.linkedin.com/in/mikael-yilmaz-83153617a/'>Mikael Yilmaz</a>, sidan baserad på en design av <a href="https://cruip.com">Cruip</a></div>
           </div>
         </div>
       </div>

@@ -4,6 +4,12 @@ import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
 
+// Icons
+import { FaReact } from 'react-icons/fa';
+import { SiPwa } from 'react-icons/si';
+import { GiArtificialIntelligence, GiServerRack } from 'react-icons/gi';
+import { TbBrandJavascript, TbSettingsAutomation } from 'react-icons/tb';
+
 const propTypes = {
   ...SectionTilesProps.types
 }
@@ -44,8 +50,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Vad kan vi hjälpa er med?',
+    paragraph: 'Vi fokuserar på framtidsäker utveckling av webbapplikationer och webbplatser. Vi har erfarenhet av att utveckla webbapplikationer och webbplatser av hög kvalitet.'
   };
 
   return (
@@ -62,19 +68,15 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
+                      <FaReact size={64} className='Icon'/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    React.js
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    React är ett mycket populärt JavaScript-bibliotek som används för att utveckla webbapplikationer.
                     </p>
                 </div>
               </div>
@@ -84,19 +86,15 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
-                      alt="Features tile icon 02"
-                      width={64}
-                      height={64} />
+                  <SiPwa size={64} className='Icon'/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Progressive Web Apps
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Progressive Web Apps är en ny typ av webbapplikation som utvecklas i webbläsaren. Fördelar inkulderar snabbare appar, billigare underhåll samt enklare för användaren
                     </p>
                 </div>
               </div>
@@ -106,19 +104,15 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 03"
-                      width={64}
-                      height={64} />
+                    <GiArtificialIntelligence size={64} className='Icon'/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Artificiell intelligens
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Att AI kommer spela en stor roll i framtiden och redan gör det idag är det nog få som inte är överrens om. Att bygga den kapaciteten redan nu kommer ge stora fördelar i framtiden
                     </p>
                 </div>
               </div>
@@ -128,19 +122,15 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
-                      alt="Features tile icon 04"
-                      width={64}
-                      height={64} />
+                    <TbBrandJavascript size={64} className='Icon'/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    JavaScript
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Javascript är det programmeringsspråk som hela webben är uppbyggd på. Genom att skriva våra appar i det säkerställer vi hög kompabilitet och hög kvalitet
                     </p>
                 </div>
               </div>
@@ -150,19 +140,15 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
-                      alt="Features tile icon 05"
-                      width={64}
-                      height={64} />
+                    <GiServerRack size={64} className='Icon'/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    IT drift
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Vi har mångårig erfarenhet av att drifta stora serverhallar samt Microsoft Active Directory och Exchange.
                     </p>
                 </div>
               </div>
@@ -172,19 +158,15 @@ const FeaturesTiles = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
-                      alt="Features tile icon 06"
-                      width={64}
-                      height={64} />
+                    <TbSettingsAutomation size={64} className='Icon'/>
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Automatisering
                     </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                    Med våra automatiseringslösningar spar ni tid och pengar och ger er möjlighet att fokusera på det ni är bra på!
                     </p>
                 </div>
               </div>
