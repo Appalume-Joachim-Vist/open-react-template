@@ -45,13 +45,14 @@ const Testimonial = ({
 
   const sectionHeader = {
     title: 'Vad säger kunderna om oss?',
-    paragraph: 'Här kan ni se ett urval av vad våra nuvarande kunder tycker'
+    // paragraph: 'Här kan ni se ett urval av vad våra nuvarande kunder tycker'
   };
 
   return (
     <section
       {...props}
       className={outerClasses}
+      id="Testimonial"
     >
       <div className="container">
         <div className={innerClasses}>

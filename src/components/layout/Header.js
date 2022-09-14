@@ -4,6 +4,10 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 import Mailto from '../../utils/Mailto';
+import Callto from '../../utils/Callto';
+import { HashLink } from 'react-router-hash-link';
+
+import { MdMailOutline, MdPhone } from 'react-icons/md';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -118,7 +122,19 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Mailto className="button button-primary button-wide-mobile button-sm" email="info@appalume.se " subject="Generella frågor" body="Hej," onClick={closeMenu}>Kontakta oss</Mailto>
+                        <HashLink smooth onClick={closeMenu} to="#Competences">Tjänster</HashLink>
+                      </li>
+                      <li>
+                        <HashLink smooth onClick={closeMenu} to="#Clients">Kunder</HashLink>
+                      </li>
+                      <li>
+                        <HashLink smooth onClick={closeMenu} to="#About">Om oss</HashLink>
+                      </li>
+                      <li>
+                        <Mailto className="button button-primary button-wide-mobile button-sm" email="info@appalume.se " subject="Generella frågor" body="Hej," onClick={closeMenu}><MdMailOutline size={30}> </MdMailOutline> &nbsp; Maila</Mailto>
+                        </li>
+                      <li>
+                        <Callto className="button button-primary button-wide-mobile button-sm" number="info@appalume.se " onClick={closeMenu}><MdPhone size={30}></MdPhone>&nbsp; Ring</Callto>
                         </li>
                     </ul>}
                 </div>

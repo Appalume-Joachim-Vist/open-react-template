@@ -46,6 +46,7 @@ const Cta = ({
     <section
       {...props}
       className={outerClasses}
+      id="Cta"
     >
       <div className="container">
         <div

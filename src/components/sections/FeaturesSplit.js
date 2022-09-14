@@ -51,13 +51,14 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'Om Oss',
-    paragraph: 'Vi är två studenter på Karolinska Institutet som brinner för teknologi och allt det kan göra för världen'
+    paragraph: ''
   };
 
   return (
     <section
       {...props}
       className={outerClasses}
+      id="About"
     >
       <div className="container">
         <div className={innerClasses}>
@@ -73,7 +74,7 @@ const FeaturesSplit = ({
                   Joachim Vist
                   </h3>
                 <p className="m-0">
-                  Joachim har tidigare erfarenhet av att jobba med automtion pch ERP system då han innan detta jobbade för en av världens störtsa Human capital management (HCM) företag. Där skrev han program som optimerade arbetsflödet
+                  Joachim har tidigare erfarenhet att jobba med automatisering av affärsprocesser och ERP-system vid ett av världens största Human Capital Management (HCM) Företag. Där skrav han program som optimerade arbetsflöden. Hos Appalume arbetar han främst med Automatisering, APIer samt frontendutveckling.
                   </p>
               </div>
               <div className={
@@ -100,7 +101,7 @@ const FeaturesSplit = ({
                   Iurii Petrov
                   </h3>
                 <p className="m-0">
-                  Iurii är civilingengör och snart fil dr i bioinformatik. Han har innan detta driftat ett datacenter med över 300 virtuella maskiner. Han lär för närvarande ut kurser i programmering samt artificiell intelligens på Karolinska Institutet
+                  Iurii är civilingenjör och doktorand i bioinformatik. Han undervisar i Artificiell intelligens och programmering vid Karolinska Institutet. Han har tidigare ansvarat för drift av ett datacenter med över 300 virtuella maskiner. På Appalume arbetar han framförallt med att skriva Backend-kod samt AI kod.
                   </p>
               </div>
               <div className={

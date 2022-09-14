@@ -15,7 +15,7 @@ const propTypes = {
 const defaultProps = {
   tag: 'button',
   color: '#008eea',
-  size: '',
+  size: '10px',
   loading: false,
   wide: false,
   wideMobile: false,

@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Mailto from '../../../utils/Mailto';
+import Callto from '../../../utils/Callto';
 
 
 const FooterNav = ({
@@ -21,11 +22,11 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Mailto email="info@appalume.se" subject="Generella frågor" body="Hej,">Kontakt</Mailto>
+          <Mailto email="info@appalume.se" subject="Generella frågor" body="Hej,">info@appalume.se</Mailto>
         </li>
-        {/* <li>
-          <Link to="#0">Om oss</Link>
-        </li> */}
+        <li>
+          <Callto number="+46708376258">+46 (0) 708 376 258</Callto>
+        </li>
       </ul>
     </nav>
   );

@@ -51,13 +51,14 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'Vad kan vi hjälpa er med?',
-    paragraph: 'Vi fokuserar på framtidsäker utveckling av webbapplikationer och webbplatser. Vi har erfarenhet av att utveckla webbapplikationer och webbplatser av hög kvalitet.'
+    paragraph: 'Vi fokuserar på framtidssäker utveckling av webbapplikationer och webbplatser. Vi har erfarenhet av att utveckla webbapplikationer och webbplatser av hög kvalitet.'
   };
 
   return (
     <section
       {...props}
       className={outerClasses}
+      id  = "Competences"
     >
       <div className="container">
         <div className={innerClasses}>
@@ -94,7 +95,7 @@ const FeaturesTiles = ({
                     Progressive Web Apps
                     </h4>
                   <p className="m-0 text-sm">
-                    Progressive Web Apps är en ny typ av webbapplikation som utvecklas i webbläsaren. Fördelar inkulderar snabbare appar, billigare underhåll samt enklare för användaren
+                    Progressive Web Apps är en ny typ av webbapplikation som utvecklas i webbläsaren. Fördelar inkluderar snabbare appar, billigare underhåll samt högre användarvänlighet.
                     </p>
                 </div>
               </div>
@@ -109,10 +110,11 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Artificiell intelligens
+                    Artificiell Intelligens
                     </h4>
                   <p className="m-0 text-sm">
-                    Att AI kommer spela en stor roll i framtiden och redan gör det idag är det nog få som inte är överrens om. Att bygga den kapaciteten redan nu kommer ge stora fördelar i framtiden
+                    {/* skriv om och gor enklare */}
+                    Att AI kommer spela en stor roll i framtiden och redan gör det idag är det nog få som inte är överens om. Att bygga den kapaciteten redan nu kommer ge stora fördelar i framtiden. 
                     </p>
                 </div>
               </div>
@@ -130,7 +132,7 @@ const FeaturesTiles = ({
                     JavaScript
                     </h4>
                   <p className="m-0 text-sm">
-                    Javascript är det programmeringsspråk som hela webben är uppbyggd på. Genom att skriva våra appar i det säkerställer vi hög kompabilitet och hög kvalitet
+                    JavaScript är det programmeringsspråk som hela webben är uppbyggd på. Genom att skriva våra appar i JavaScript säkerställer vi hög kompatibilitet och kvalitet.
                     </p>
                 </div>
               </div>
@@ -148,7 +150,7 @@ const FeaturesTiles = ({
                     IT drift
                     </h4>
                   <p className="m-0 text-sm">
-                    Vi har mångårig erfarenhet av att drifta stora serverhallar samt Microsoft Active Directory och Exchange.
+                    Vi har mångårig erfarenhet av drift av stora serverhallar samt stor erfarenhet av att administrera Microsoft Active Directory och Exchange.
                     </p>
                 </div>
               </div>
@@ -166,7 +168,7 @@ const FeaturesTiles = ({
                     Automatisering
                     </h4>
                   <p className="m-0 text-sm">
-                    Med våra automatiseringslösningar spar ni tid och pengar och ger er möjlighet att fokusera på det ni är bra på!
+                    Med våra automatiseringslösningar sparar ni tid och pengar och får möjlighet att fokusera på det ni är bra på!
                     </p>
                 </div>
               </div>

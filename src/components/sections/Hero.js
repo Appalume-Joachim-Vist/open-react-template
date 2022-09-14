@@ -56,6 +56,7 @@ const Hero = ({
     <section
       {...props}
       className={outerClasses}
+      id="Hero"
     >
       <div className="container-sm">
         <div className={innerClasses}>
@@ -65,7 +66,7 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Vår vision är att genom modern digital teknik göra det lättare för företag i alla brancher att uppnå sin fulla potential
+                Vår vision är att genom modern digital teknik göra det lättare för företag i alla branscher att uppnå sin fulla potential
                 </p>
             </div>
           </div>

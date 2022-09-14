@@ -3,6 +3,8 @@ import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -11,7 +13,8 @@ import LayoutDefault from './layouts/LayoutDefault';
 import Home from './views/Home';
 
 // Initialize Google Analytics
-ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+// ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+ReactGA.initialize('G-5G8Y1691F9');
 
 const trackPage = page => {
   ReactGA.set({ page });
@@ -32,13 +35,17 @@ const App = () => {
   }, [location]);
 
   return (
+    <BrowserRouter>
+
     <ScrollReveal
       ref={childRef}
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
         </Switch>
+        
       )} />
+      </BrowserRouter>
   );
 }
 
